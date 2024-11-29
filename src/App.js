@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+// import DownloadPdf from './FormatPDF/DownloadPdf';
+import DownloadStyledPdf from './FormatPDF/DownloadStyledPdf';
+import DownloadStyledText from './FormatTxt/DownloadStyledText';
+// import DownloadExcel from './FormatExcel/DownloadExcel';
+import DownloadStyledExcel from './FormatExcel/DownloadStyledExcel';
+import DownloadCVS from './FormatCVS/DownloadCVS';
+// import DownloadPdf from './PDF/DownloadPdf';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      {/* Working */}
+      <DownloadCVS />
+      <DownloadStyledExcel />
+      <DownloadStyledPdf />
+      <DownloadStyledText />
+
+      {/*Testing*/}
+      {/* <DownloadExcel /> */}
+      {/* <DownloadPdf /> */}
+
     </div>
   );
 }
